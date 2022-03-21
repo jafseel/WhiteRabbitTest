@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">White Rabbit Test</string>
+
+
+    <string name="alert_title">Warning!</string>
+    <string name="alert_msg">Are you sure?</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="search">Search</string>
+</resources>

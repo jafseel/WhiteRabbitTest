@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="group.whiterabbit.coding_test.ui.SplashFragment"
+        android:label=""
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/employeesFragment"
+        android:name="group.whiterabbit.coding_test.ui.EmployeesFragment"
+        android:label=""
+        tools:layout="@layout/fragment_employees">
+
+        <action
+            android:id="@+id/action_employeesFragment_to_employeesDetailsFragment"
+            app:destination="@id/employeeDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="group.whiterabbit.coding_test.ui.EmployeeDetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_employee_details" />
+</navigation>
